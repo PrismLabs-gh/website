@@ -2,10 +2,27 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white text-black">
+      <header className="container mx-auto px-6 py-8 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <img 
+            src="/lovable-uploads/acfcc900-ce89-49a9-8a55-b670b08a6911.png" 
+            alt="Prism Labs Logo" 
+            className="h-12 w-12"
+          />
+          <h1 className="text-2xl font-bold">PrismLabs</h1>
+        </div>
+        <nav className="flex gap-6">
+          <Link to="/" className="hover:text-gray-700">Home</Link>
+          <Link to="/projects" className="hover:text-gray-700">Projects</Link>
+          <Link to="/about" className="hover:text-gray-700">About</Link>
+        </nav>
+      </header>
+
       <div className="container mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold mb-8">Our Projects</h1>
         

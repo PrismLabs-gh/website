@@ -17,9 +17,9 @@ const Index = () => {
           <h1 className="text-2xl font-bold">PrismLabs</h1>
         </div>
         <nav className="flex gap-6">
+          <Link to="/" className="hover:text-gray-700">Home</Link>
           <Link to="/projects" className="hover:text-gray-700">Projects</Link>
-          <a href="#about" className="hover:text-gray-700">About</a>
-          <a href="#community" className="hover:text-gray-700">Community</a>
+          <Link to="/about" className="hover:text-gray-700">About</Link>
         </nav>
       </header>
 
