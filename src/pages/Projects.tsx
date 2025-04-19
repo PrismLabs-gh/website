@@ -8,18 +8,18 @@ const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white text-black">
       <header className="container mx-auto px-6 py-8 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <Link to="/" className="flex items-center gap-4 transition-transform hover:scale-105">
           <img 
             src="/lovable-uploads/acfcc900-ce89-49a9-8a55-b670b08a6911.png" 
             alt="Prism Labs Logo" 
             className="h-12 w-12"
           />
           <h1 className="text-2xl font-bold">PrismLabs</h1>
-        </div>
+        </Link>
         <nav className="flex gap-6">
-          <Link to="/" className="hover:text-gray-700">Home</Link>
-          <Link to="/projects" className="hover:text-gray-700">Projects</Link>
-          <Link to="/about" className="hover:text-gray-700">About</Link>
+          <Link to="/" className="hover:text-gray-700 transition-colors">Home</Link>
+          <Link to="/projects" className="hover:text-gray-700 transition-colors">Projects</Link>
+          <Link to="/about" className="hover:text-gray-700 transition-colors">About</Link>
         </nav>
       </header>
 
