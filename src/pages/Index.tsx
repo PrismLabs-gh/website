@@ -1,12 +1,51 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-white text-black">
+      <header className="container mx-auto px-6 py-8 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <img 
+            src="/lovable-uploads/acfcc900-ce89-49a9-8a55-b670b08a6911.png" 
+            alt="Prism Labs Logo" 
+            className="h-12 w-12"
+          />
+          <h1 className="text-2xl font-bold">PrismLabs</h1>
+        </div>
+        <nav className="flex gap-6">
+          <a href="#projects" className="hover:text-gray-700">Projects</a>
+          <a href="#about" className="hover:text-gray-700">About</a>
+          <a href="#community" className="hover:text-gray-700">Community</a>
+        </nav>
+      </header>
+
+      <main className="container mx-auto px-6 flex-grow flex items-center justify-center">
+        <div className="text-center max-w-3xl">
+          <h2 className="text-5xl font-bold mb-6">
+            Fixing the Problems Nobody Seemed to Care About
+          </h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Prism Labs creates Free and Open Source Software (FOSS) that solves overlooked technical challenges
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button variant="default" className="bg-black text-white hover:bg-gray-800">
+              Explore Projects <ArrowRight className="ml-2" />
+            </Button>
+            <Button variant="outline" className="border-black text-black hover:bg-gray-100">
+              Contribute
+            </Button>
+          </div>
+        </div>
+      </main>
+
+      <footer className="container mx-auto px-6 py-8 text-center border-t">
+        <p className="text-gray-600">
+          © {new Date().getFullYear()} Prism Labs. Open Source. Always.
+        </p>
+      </footer>
     </div>
   );
 };
