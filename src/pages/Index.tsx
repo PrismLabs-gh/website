@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -16,7 +17,7 @@ const Index = () => {
           <h1 className="text-2xl font-bold">PrismLabs</h1>
         </div>
         <nav className="flex gap-6">
-          <a href="#projects" className="hover:text-gray-700">Projects</a>
+          <Link to="/projects" className="hover:text-gray-700">Projects</Link>
           <a href="#about" className="hover:text-gray-700">About</a>
           <a href="#community" className="hover:text-gray-700">Community</a>
         </nav>
@@ -31,12 +32,16 @@ const Index = () => {
             Prism Labs creates Free and Open Source Software (FOSS) that solves overlooked technical challenges
           </p>
           <div className="flex justify-center gap-4">
-            <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-              Explore Projects <ArrowRight className="ml-2" />
-            </Button>
-            <Button variant="outline" className="border-black text-black hover:bg-gray-100">
-              Contribute
-            </Button>
+            <Link to="/projects">
+              <Button variant="default" className="bg-black text-white hover:bg-gray-800">
+                Explore Projects <ArrowRight className="ml-2" />
+              </Button>
+            </Link>
+            <a href="https://github.com/PrismLabs-gh/" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-black text-black hover:bg-gray-100">
+                Contribute
+              </Button>
+            </a>
           </div>
         </div>
       </main>

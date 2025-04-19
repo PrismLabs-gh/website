@@ -1,0 +1,26 @@
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
+const Projects = () => {
+  return (
+    <div className="min-h-screen flex flex-col bg-white text-black">
+      <div className="container mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold mb-8">Our Projects</h1>
+        
+        <div className="bg-gray-50 rounded-lg p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Meridian</h2>
+          <p className="text-gray-700 mb-6">
+            An AI client built for power users, designed to maximize productivity and efficiency in AI interactions.
+          </p>
+          <Button variant="default" className="bg-black text-white hover:bg-gray-800">
+            Learn More <ArrowRight className="ml-2" />
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
