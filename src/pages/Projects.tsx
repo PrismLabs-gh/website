@@ -14,9 +14,15 @@ const Projects = () => {
           <p className="text-gray-700 mb-6">
             An AI client built for power users, designed to maximize productivity and efficiency in AI interactions.
           </p>
-          <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-            Learn More <ArrowRight className="ml-2" />
-          </Button>
+          <a 
+            href="https://github.com/PrismLabs-gh/meridian/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="default" className="bg-black text-white hover:bg-gray-800">
+              Learn More <ArrowRight className="ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </div>
