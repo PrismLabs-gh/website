@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/PPTelegraf-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/PPTelegraf-Ultrabold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, TestTube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-black">
+    <div className="min-h-screen flex flex-col bg-white text-black font-telegraf">
       <header className="container mx-auto px-6 py-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-4 transition-transform hover:scale-105">
           <img 
@@ -23,22 +22,26 @@ const Index = () => {
         </nav>
       </header>
 
-      <main className="container mx-auto px-6 flex-grow flex items-center justify-center">
-        <div className="text-center max-w-3xl">
+      <main className="container mx-auto px-6 flex-grow flex items-center">
+        <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-5xl font-bold mb-6">
             Fixing the Problems Nobody Seemed to Care About
           </h2>
           <p className="text-xl text-gray-700 mb-8">
             Prism Labs creates Free and Open Source Software (FOSS) that solves overlooked technical challenges
           </p>
+          <p className="text-lg text-gray-600 mb-8">
+            We believe in the power of open source to drive innovation and make technology accessible to everyone. 
+            Our projects focus on developer experience, performance optimization, and solving real-world problems.
+          </p>
           <div className="flex justify-center gap-4">
             <Link to="/projects">
-              <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-                Explore Projects <ArrowRight className="ml-2" />
+              <Button variant="default" className="bg-black text-white hover:bg-gray-800 transform transition-all duration-300 hover:scale-105">
+                Explore Projects <ArrowRight className="ml-2 animate-arrow-bounce" />
               </Button>
             </Link>
             <a href="https://github.com/PrismLabs-gh/" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="border-black text-black hover:bg-gray-100">
+              <Button variant="outline" className="border-black text-black hover:bg-gray-100 transform transition-all duration-300 hover:scale-105">
                 Contribute
               </Button>
             </a>
